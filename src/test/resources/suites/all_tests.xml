@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Demo Test Suite">
+    <listeners>
+        <listener class-name="util.CustomRetrierTransformer"/>
+    </listeners>
+    <test name="Demo Site Tests" parallel="tests" thread-count="3">
+        <classes>
+            <class name="ui.tests.FiltersTest"/>
+            <class name="ui.tests.ListingsTest"/>
+        </classes>
+    </test>
+</suite>
